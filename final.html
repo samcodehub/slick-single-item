@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="final.css"/>
+<!--    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>-->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>   
+	
+    <title>Document</title>
+</head>
+<body>
+   <section>
+        <div class="contenedor">
+            
+            <div id="slider" class="one-time">
+                <span class="border"></span>
+        </div>
+        </div>    
+    </section>
+    <footer>
+        <script src="datos.json" type="text/javascript"></script>
+        <script src="script.js" type="text/javascript"></script>
+    </footer>
+</body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> 
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.one-time').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        adaptiveHeight: true
+});
+    });
+  </script>
+
+</html>

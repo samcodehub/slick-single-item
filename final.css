@@ -1,0 +1,315 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(7, 2, 66);
+    z-index: -100;
+    overflow: hidden;
+}
+
+.contenedor{
+    width: 100%;
+    margin: 0px auto;
+
+}
+
+    
+.border{
+    width: 300px;
+    height: 80vh;
+    border: 2px solid rgb(160, 237, 6);
+    z-index: 220;
+}
+
+#slider {
+    width: 400px;
+    margin: 10px auto;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 1px 10px 50px 10px #888888;
+    
+    
+}
+
+
+
+#slider .title{
+    font-size: 22px;
+    margin-top: 2px;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(207, 34, 3);
+}
+
+#slider .sexo{
+    font-size: 12px;
+    color: rgb(15, 68, 15);
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    font-weight: bold;
+    margin-left: 22%;
+    text-align: left;
+    
+}
+
+
+.cart {
+    background: rgb(11, 3, 252);
+    color: #fff;
+    padding: 10px 10px;
+    width: 120px;
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px 10px;
+    cursor: pointer;
+    z-index: 100;
+    
+}
+
+#slider .description{
+    font-size: 12px;
+    color: rgb(15, 68, 15);
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    font-weight: bold;
+    margin-left: 22%;
+    width: 230px;
+    overflow: hidden;
+    text-align: left;
+    
+}
+
+#slider .price{
+    font-size: 16px;
+    text-align: center;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    font-weight: 600;
+    color: rgb(252, 45, 8);
+    margin-top: 10px;
+}
+
+
+
+#slider img{
+    width: 250px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+
+
+
+.slick-slider button{ 
+    position: absolute;
+    top: 50%;
+    background: transparent;
+    border: none;
+    outline: none;
+    z-index:100;
+    width: 50px;
+    height: 50px; 
+    color: transparent;
+    cursor: pointer;
+    transform: translate(0%,-70%);
+    border-radius: 36px;
+    box-shadow: 0px 2px 20px rgba(0,0,0,0.07);
+}
+.slick-slider .slick-prev{
+    left:-30px;
+    margin-top: 5px;
+}
+.slick-slider .slick-prev::before{
+    
+    font-weight: 900;
+    content: url(img/ar.png);
+    font-size:30px;
+    left: 8px;
+    position: relative;
+    z-index: 10;
+}
+.slick-slider .slick-next{
+    right:-40px;
+}
+.slick-slider .slick-next::after{
+    
+    font-weight: 900;
+    content: url(img/al.png);
+    font-size:20px;
+    
+    right: 15px;
+    position: relative;
+    z-index: 10;
+}
+.slick-slide {
+    color: #333;
+    padding: 40px 0;
+    font-size: 1.25em;
+    font-family: "Verdana";
+    text-align: center;
+    pointer-events: none;
+}
+
+.slick-slide .desc {
+    opacity: 0;
+}
+
+.slick-slide .desc>* {
+    transition: all 900ms ease;
+}
+
+.slick-slide .desc h2 {
+    position: relative;
+    left: 50px;
+    line-height: 1;
+}
+.slick-slide .desc h2 span{
+    color:#bf0606;
+}
+.slick-slide .desc p {
+    position: relative;
+    top: 50px;
+    opacity: 0;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black !important;
+}
+
+.slick-dots {
+    text-align: center;
+}
+
+.slick-dots li {
+    display: inline-block;
+    padding: 1px;
+    background: #ccc;
+    margin: 2px 2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active {
+    background: #bf0606;
+}
+
+.slick-dots button {
+    display: none;
+}
+.slick-slide {
+    opacity: 0.2;
+    transition: all 300ms ease;
+}
+
+.slick-current {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.slick-current .desc {
+    opacity: 1;
+}
+
+.slick-current .desc h2 {
+    left: 0; 
+}
+
+.slick-current .desc p {
+    top: 0;
+    opacity: 1;
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 2px solid #bf0606;
+    text-decoration: none;
+    color: #bf0606;
+    font-size: .6em;
+    
+    display: block;
+    margin: 30px auto 0;
+    max-width: 130px;
+    width: 100%;
+    font-weight: bold;
+    pointer-events: initial;
+}
+
+@media screen and(max-width:767px){
+    #slider {
+        width: 400px;
+        margin: 5px auto;
+        height: 100vh;
+        }
+
+        #slider .title{
+            font-size: 15px;
+            margin-top: 2px;
+            font-family: "Helvetica Neue",Helvetica,Arial;
+            font-weight: 500;
+            text-align: center;
+            color: rgb(207, 34, 3);
+        }
+        
+        #slider .sexo{
+            font-size: 12px;
+            color: rgb(15, 68, 15);
+            font-family: "Helvetica Neue",Helvetica,Arial;
+            font-weight: bold;
+            margin-left: 5px;
+            text-align: left;
+            
+        }
+        
+        
+        .cart {
+            background: rgb(11, 3, 252);
+            color: #fff;
+            padding: 5px 5px;
+            width: 60px;
+            font-size: 12px;
+            font-family: "Helvetica Neue",Helvetica,Arial;
+            border-radius: 5px;
+            text-align: center;
+            margin: 0 auto;
+            border-radius: 5px 5px;
+            cursor: pointer;
+            
+        }
+        
+        #slider .description{
+            font-size: 12px;
+            color: rgb(15, 68, 15);
+            font-family: "Helvetica Neue",Helvetica,Arial;
+            font-weight: bold;
+            margin-left: 5px;
+            width: 80%;
+            overflow: hidden;
+            text-align: left;
+            
+        }
+        
+        #slider .price{
+            font-size: 12px;
+            text-align: center;
+            font-family: "Helvetica Neue",Helvetica,Arial;
+            font-weight: 400;
+            color: rgb(252, 45, 8);
+            margin-top: 5px;
+        }
+        
+        
+        
+        #slider img{
+            width: 150px;
+        }
+}
+
